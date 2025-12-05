@@ -1,0 +1,24 @@
+  -- ejercicio de estilo estructural
+  library IEEE;
+  use IEEE.std_logic_ll64.all;
+
+  entity sumad is
+      port(
+          A,B,C,D,E,F: in std_logic; 
+          X: out std_logic_vector(1 to 3);
+      );
+  end sumad;
+
+  use work.gates.all;
+
+  architecture ejercicio of sumad is
+  signal C std_logic_vector (1 to 3);
+  begin 
+    X(1) <= A xnor B;
+    C(1) <= C and D;
+    C(2) <= E xor F;
+    C(3) <= X(1) or C(1);
+    X(3) <= C(1) and C(2);
+    X(2) <= C(3) nand X(3);
+  end ejercicio;
+

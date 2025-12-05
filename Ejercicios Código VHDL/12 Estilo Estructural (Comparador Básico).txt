@@ -1,0 +1,21 @@
+  // ejercicio de estilo estructural
+  library IEEE;
+  use IEEE.std_logic_ll64.all;
+
+  entity ejercicio is
+      port(
+          a0,b0,a1,b1: IN std_logic; -- a,b bit_vector(0 to 1)
+          c: out std_logic
+      );
+  end ejercicio;
+
+  use work.gates.all;
+
+  architecture estiloestructural of ejercicio is
+  signal x bit_vector(0 to 1);
+  begin 
+    U0: xnor2 port map (a0, b0, x(0))); -- UO, U1,U2 son las compuertas, mientras que 
+    U1: xnor2 port map (a1, b1, x(1)));
+    U2: and2 port map (x(0), x(1), c);
+  end estiloestructural;
+

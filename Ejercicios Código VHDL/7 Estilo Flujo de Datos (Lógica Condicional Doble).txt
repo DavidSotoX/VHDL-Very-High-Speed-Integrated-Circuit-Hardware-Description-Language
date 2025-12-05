@@ -1,0 +1,53 @@
+  // ejercicio de flujo de datos
+  library IEEE;
+  use IEEE.std_logic_ll64.all;
+
+  entity ejercicio is
+      port(
+          A,B: IN std_logic;
+          F0,f1: out std_logic
+      );
+  end ejercicio;
+
+
+
+  architecture estiloflujo of ejercicio is
+  begin
+    F0 <= '1' when (A = '0' and B= '0') else
+      '1' when (A='0' and B='1') else
+        '0';
+    F1 <= '0 when (A= '1' and B='1') else
+      '1';
+    
+  end estiloflujo;
+
+
+
+
+
+
+
+
+
+
+
+
+  // ejercicio de flujo de datos
+  library IEEE;
+  use IEEE.std_logic_ll64.all;
+
+  entity ejercicio is
+      port(
+          A,B: IN std_logic;
+          F: out std_logic
+      );
+  end ejercicio;
+
+
+
+  architecture estiloflujo of ejercicio is
+  begin
+    F <= A * B
+    F1 <= '1' when (A = '1' and B= '1')
+  end estiloflujo;
+

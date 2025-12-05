@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ejercicio is
+port (E0,E1,E2,E3,SELA, SELB, SELC: in std_logic; 
+ F:out std_logic);
+end ejercicio;
+
+architecture arqejercicio of ejercicio is
+begin 
+F<= E3 when SELC ='1'else E2 when SELB = '1' else E1 when SELA = '1' else E0;
+end arqejercicio;
+

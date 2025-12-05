@@ -1,0 +1,33 @@
+	library IEEE;
+use IEEE.std_logic_ll64.all
+
+entity ejercicio is
+	port(
+		A,B,C,D,E,F,G,H: IN bit;
+		F1: out bit):
+	);
+end entity;
+
+
+
+architecture ejercicio of ejercicio is
+begin
+	 F1 <= (A and B) and (C or D) and (E and not F or not E and not F) and (g and h)
+end architecture;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

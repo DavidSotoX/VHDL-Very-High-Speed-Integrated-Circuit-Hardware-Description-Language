@@ -1,0 +1,19 @@
+library IEEE;
+     use IEEE.STD_LOGIC_1164.all;
+     use IEEE.NUMERIC_STD.all;
+
+     ENTITY sum IS
+       PORT (a : IN std_logic_vector(0 DOWNTO 1); 
+             b : IN std_logic_vector(0 DOWNTO 1); 
+             z : OUT std_logic_vector(0 DOWNTO 2)); -- tener en cuenta el acarreo		
+     END sum;
+
+     ARCHITECTURE proceso OF sum IS
+     BEGIN
+
+       PROCESS (a, b) IS
+       BEGIN
+         salida <= std_logic_vector('0' & UNSIGNED(a) + UNSIGNED(b)); -- concatenar un cero para que las dimensiones de la suma de los vectores coincidan
+       END PROCESS;
+
+     END synth;		

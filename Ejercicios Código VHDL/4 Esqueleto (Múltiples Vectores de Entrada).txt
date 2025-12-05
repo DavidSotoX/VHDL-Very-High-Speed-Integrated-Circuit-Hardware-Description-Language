@@ -1,0 +1,11 @@
+// ejercicio 2
+library IEEE;
+use IEEE.std_logic_ll64.all;
+
+entity ejercicio is
+	port(
+      	A,B: IN bitvector (0 to 1);
+      	X: IN bit_vector (0 to 1);
+      	Z: out bit_vector (0 to 3):
+	);
+end ejercicio;

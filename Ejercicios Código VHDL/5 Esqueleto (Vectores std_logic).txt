@@ -1,0 +1,19 @@
+// Code your testbench here
+  // or browse Examples
+  library IEEE;
+  use IEEE.std_logic_ll64.all;
+
+  entity ejercicio is
+      port(
+          A,B: IN std_logic;
+          X: IN std_logic_vector(0 to 1);
+          Z: out std_logic_vector(0 to 3):
+      );
+  end ejercicio;
+
+
+
+  architecture ejercicio of ejercicio is
+  begin
+
+  end architecture;
