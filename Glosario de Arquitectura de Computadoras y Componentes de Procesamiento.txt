@@ -1,0 +1,173 @@
+CPU (Unidad de proceso central) esta formada por: 
+	ALU
+	Unidad de control busca instrucciones, las decodifica y ejecuta
+		Tipos
+			cableadas
+			microprogramadas
+		Componentes
+		    	Registro de instrucción: es el encargado de almacenar la instrucción que se está ejecutando.
+    			Recuento de programa: registro que contiene la dirección de memoria de la siguiente instrucción a ejecutar.
+    			Controlador y decodificador: se encarga de interpretar la instrucción para su posterior proceso. Es el encargado de extraer el código de 				operación de la instrucción en curso.
+    			Secuenciador: genera microórdenes necesarias para ejecutar la instrucción.
+    			Reloj: proporciona una sucesión de impulsos eléctricos a intervalos constantes.
+	banco de registros o conjunto de registros, sirve para almacenar datos, de manera temporal.
+			
+
+
+
+
+Acceso directo a memoria (DMA)
+
+    Permite a cierto tipo de componentes de una computadora acceder a la memoria del sistema para leer o escribir independientemente de la unidad central de procesamiento (CPU).
+    DMA es una característica esencial en todos los ordenadores modernos.
+    Permite a dispositivos de diferentes velocidades comunicarse sin someter a la CPU a una carga masiva de interrupciones.
+    Una transferencia DMA consiste principalmente en copiar un bloque de memoria de un dispositivo a otro.
+    En lugar de que la CPU inicie la transferencia, la transferencia se lleva a cabo por el controlador DMA.
+    Las transferencias DMA son esenciales para aumentar el rendimiento de aplicaciones que requieran muchos recursos.
+
+ALU
+
+    Unidad Aritmética Lógica.
+    Circuito, que tiene implementado operaciones, uso de registros, que se realizan con los argumentos que recibe.
+    Tres grandes bloques que son: bloque de aritmética, bloque operaciones and/ or, bloque multiplexor.
+    Las operaciones que se realizan son binarias, dándonos la ilusión de operaciones de cadenas de bits, las cuales no son más que agrupaciones de compuertas y componentes como si de armar un sumador se tratara.
+    Podemos realizar también operaciones de traspaso y/ rotación de bits.
+    Usada para un componente/ proceso más grande, la CPU.
+    Podemos tener ALU de diferentes tamaños según lo requiramos.
+
+Arquitectura paralela
+
+    Múltiples procesadores es un tipo de arquitectura de computación que permite procesar instrucciones y datos simultáneamente.
+    Se habla del paralelismo de tareas, ya que en el mundo de la computación el paralelismo se puede aplicar a otras áreas.
+    Clasificación: Exponentes con su arquitectura:
+        Michael J. Flynn, tiene cuatro tipos: una instrucción un dato, una instrucción múltiples datos, múltiples instrucciones un dato y múltiples instrucciones 	múltiples datos.
+        Andrew Stuart La clasificación de Flynn no cubre las nuevas arquitecturas y Tanenbaum realiza una clasificación extendida de la siguiente forma:, es un 	extendido del exponente anterior ya que Flynn no cubre las nuevas arquitecturas y Tanenbaum realiza una clasificación extendida de la siguiente forma: acceso 	uniforme a memoria, acceso solo a memoria cache, grupo de estaciones de trabajo, procesadores en paralelo, memoria temporal, sin memoria temporal, redes 	neuronales, computadores.
+
+Arquitectura Pipeline
+
+    Serie de elementos de procesamiento de datos ordenados, de tal modo que la salida de cada uno es la entrada del siguiente, con un almacenamiento temporal de datos entre procesos.
+    Este sistema es común verlo en sistemas operativos multitarea.
+    Ayuda a ejecutar una serie de procesos de manera simultánea, los cuales son ejecutados de manera secuencial mediante un administrador de tareas que aplica distintos tipos de prioridad y capacidad de procesamiento.
+    Aumenta el rendimiento de la CPU a una velocidad de reloj determinada, aunque puede aumentar la latencia debido a la sobrecarga adicional del proceso de pipeline en sí.
+    Características:
+        Multiprogramación y Multiprocesamiento:
+            Estas acciones se toman a un nivel de Programa o Trabajo.
+        Tarea o Procedimientos:
+            Acciones que se toman dentro de un mismo programa ejecutándose procesos que son independientes de manera simultánea.
+        Interinstrucciones:
+            Acciones a nivel de instrucción, o sea dentro del mismo proceso o tarea sé que se pueden ejecutar instrucciones independientes de manera simultánea.
+
+Banco de Registros
+
+    Banco o Set / Conjunto de registros.
+    Entiéndase registros o instrucciones, la cual no es más que una acción que mandamos a hacer en un procesador.
+    Una serie de posiciones especiales de memoria, ubicadas físicamente dentro de la propia CPU.
+    Algunos de estos registros son de uso interno de la propia CPU y otros son accesibles y utilizables por el programador.
+    Registros más comunes:
+        Registros del tipo acumulador, cada set de registros e instrucciones tiene una cantidad diferente de registros del tipo acumulador.
+        Registros de acceso a la memoria, hay dos:
+            Registros que contienen la dirección de memoria donde se encuentran los datos.
+            Registros que contienen datos que se han de escribir o los que se han de leer.
+        Registros de propósito general no tienen una utilidad concreta y especifica, se utilizan en algunas arquitecturas para poder acceder a ellos con la menor latencia posible.
+        Contador de programa en un registro que indica la dirección de memoria de la siguiente instrucción a ejecutar. Las instrucciones de salto las modifican cuando no se quiere acceder a a la siguiente instrucción sino a otra parte del programa. En cada ciclo de instrucción completo se incrementa la dirección de memoria en 1 y esta asociado al bus de direcciones del procesador.
+
+Controlador programable de interrupciones(PIC)
+
+    Es un dispositivo usado para combinar varias fuentes de interrupciones sobre una o más líneas del CPU.
+
+    Los PICs a menudo permiten la conexión en cascada de sus salidas a las entradas entre uno y otro.
+
+        Estas líneas, de las que se habla son básicamente carriles de información, la autopista por donde viaja la información entre cada componente.
+        Hoy, con el PCIe se envía un bit de información con cada ciclo del reloj de tu PC.
+    Características:
+
+        Los PICs típicamente tienen un conjunto común de registros.
+        En los PICs hay un número de esquemas de prioridad comunes, incluyendo prioridades duras, prioridades específicas, y prioridades rotativas.
+        Las interrupciones pueden ser disparadas por borde o por nivel.
+
+
+Dispositivos de E/S
+
+    Permiten que el sistema gestionado recopile, almacene y transmita datos.
+    Se encuentran en la propia unidad de servidor y en las unidades de expansión que están conectadas al servidor.
+    Se pueden incorporar en la unidad o bien pueden instalarse en ranuras físicas.
+    Algunos ejemplos de dispositivos de entrada son: el teclado, el ratón, el escáner.
+
+
+Lógica cableada
+
+    Consiste en el diseño de automatismos mediante la utilización de circuitos cableados.
+    Los circuitos cableados incluyen funciones de mando y control, de señalización, de protección y de potencia.
+    Cualquier cambio en la programación de la instalación, pasará por modificar el cableado y los elementos de forma que cumplan las nuevas funciones de mando, protección y potencia.
+    Los automatismos de lógica cableada se suelen emplear en instalaciones pequeñas y en lugares críticos donde la seguridad de personas y máquinas no puede depender de la lógica programada.
+
+Lógica Programada
+
+    Es lo contrario de la lógica cableada.
+    En esta se sustituyen los elementos utilizados en los circuitos de mando.
+    Esta lógica nos permite realizar cambios en las operaciones de mando, mediante el cambio de la programación, y por ello no tener que modificar el cableado.
+    Aunque los fundamentos de la programación de la lógica programada son similares, cada fabricante utiliza una nomenclatura y un software específico para ello.
+
+Núcleo de un procesador
+
+    es un individuo procesador dentro de un CPU.
+    Muchas computadoras hoy tienen multi-core procesadores, lo que significa que la CPU contiene más de un núcleo.
+    Estos nos permiten tener algo parecido a varias CPUs en una, que resulta de multiplicar determinadas partes lógicas del procesador, para así conseguir un paralelismo en la ejecución que es imposible en un sistema mononúcleo.
+    Un núcleo puede llevar a cabo un ciclo de instrucción por sí solo.
+    Si tenemos dos núcleos, podríamos paralelizar y llevar a cabo dos ciclos de instrucción independientes, como si tuviéramos dos procesadores.
+
+
+
+procesador de señales digitales o DSP
+
+    Sistema basado en un procesador o microprocesador que posee un conjunto de instrucciones, un hardware y un software optimizados para aplicaciones que requieran operaciones numéricas a muy alta velocidad.
+    Un DSP está diseñado teniendo en cuenta las tareas más habituales del procesado digital: sumas, multiplicaciones y retrasos (almacenar en memoria).
+    Abandonan la arquitectura clásica de Von Neumann, en la que datos y programas están en la misma zona de memoria, y apuestan por la denominada arquitectura Hardvard.
+    Elementos básicos:
+        Conversores en las entradas y salidas.
+        Memoria de datos, memoria de programa y DMA.
+        MACs: multiplicadores y acumuladores.
+        ALU: unidad aritmética lógica.
+        Registros.
+        PLL: bucles enganchados en fase.
+        PWM: módulos de control de ancho de pulso.
+
+
+Taxonomía Flynn
+
+    La taxonomía de Flynn es una clasificación de arquitecturas de computadores propuesta por Michael J. Flynn en 1972.​​
+    Basada en el número de instrucciones concurrentes en un instante de procesamiento
+    Clasificación:
+        Una instrucción, un dato (SISD)
+            Computador secuencial que no explota el paralelismo en las instrucciones ni en flujos de datos.
+        Una instrucción, múltiples datos (SIMD)
+            Todas las unidades ejecutan la misma instrucción sincronizadamente, pero con datos distintos.
+        Múltiples instrucciones, un dato (MISD)
+            Poco común debido al hecho de que la efectividad de los múltiples flujos de instrucciones suele precisar de múltiples flujos de datos.
+        Múltiples instrucciones, múltiples datos (MIMD)
+            Varios procesadores autónomos que ejecutan simultáneamente instrucciones diferentes sobre datos diferentes.
+
+Unidad de control
+
+    Es uno de los tres bloques funcionales principales en los que se divide una CPU.
+
+    Su función es buscar las instrucciones en la memoria principal, decodificarlas y ejecutarlas, empleando para ello la unidad de proceso.
+
+    Tipos:
+        Cableadas, usadas generalmente en máquinas sencillas.
+        Microprogramadas o programadas, propias de máquinas más complejas.
+
+    Componentes:
+
+        Registro de instrucción Es el encargado de almacenar la instrucción que se está ejecutando.
+
+        Recuento de programa: registro que contiene la dirección de memoria de la siguiente instrucción a ejecutar.
+
+        Controlador y decodificador: se encarga de interpretar la instrucción para su posterior proceso. Es el encargado de extraer el código de operación de la instrucción en curso.
+
+        Secuenciador: genera microórdenes necesarias para ejecutar la instrucción.
+
+        Reloj: proporciona una sucesión de impulsos eléctricos a intervalos constantes.
+
+
+
